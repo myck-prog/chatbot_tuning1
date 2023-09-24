@@ -1,3 +1,4 @@
+''' Update on Sept 24 - Being commented out since data can't be found @myckland
 import os
 
 # documents
@@ -34,14 +35,17 @@ import streamlit as st
 #/Users/sunnyd/Downloads/Archive/data
 
 # UPDATE THESE PARAMETERS AS NEEDED
+# import os
+
+# # UPDATE THESE PARAMETERS AS NEEDED
+
 # # Get the directory of the current script
 # current_directory = os.path.dirname(os.path.abspath(__file__))
 
-# # Construct the path to the 'data' directory
+# Construct the path to the 'data' directory
 # directory = os.path.join(current_directory, '..', 'data/')
 
-
-directory='../data/' # This is the directory containing the CSV/text files.
+directory='../data' # This is the directory containing the CSV/text files.
 
 # Initialize Dictionaries
 tool_dict = dict()
@@ -160,3 +164,4 @@ def chat_with_chatbot(user_input, agent_info, streamlit=False):
     agent_info['chat_history'].append(result['chat_history'])
     
     return result
+    '''

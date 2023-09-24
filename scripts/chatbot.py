@@ -1,3 +1,5 @@
+''' Update on Sept 24 - Being commented out since data can't be found @myckland
+
 import streamlit as st
 
 from chat_functions import *
@@ -7,6 +9,11 @@ import streamlit as st
 # Prepare the documents
 doc_id = 1
 directory = 'data'
+if not os.path.exists(directory):
+    st.error(f"Directory not found: {directory}")
+    st.stop()
+
+
 doc_dict[doc_id] = create_documents(directory=directory, glob='*.csv')
 retriever_dict = create_retriever(doc_dict[doc_id], 'recycle')
 description_dict['recycle'] = """
@@ -98,3 +105,4 @@ else:
 #     if st.button('Go to Back'):
 #             st.session_state.page = "Uber Pickups"
 
+'''
