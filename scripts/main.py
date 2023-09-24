@@ -5,6 +5,7 @@ import streamlit.components.v1 as components
 import requests
 import time
 
+
 PAGES = {"Chatbot": show_chatbot}
 # Set the initial page
 if "page" not in st.session_state:
