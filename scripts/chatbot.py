@@ -1,9 +1,17 @@
+
+
+
+def show():
+    return None
+
+
 ''' Update on Sept 24 - Being commented out since data can't be found @myckland
 
 import streamlit as st
 
 from chat_functions import *
 import streamlit as st
+
 
 
 # Prepare the documents
