@@ -1,4 +1,4 @@
 # Virtual Environment
 trying_streamlit/
 #Creds
-scripts/credentials.json
+credentials.json.DS_Store
