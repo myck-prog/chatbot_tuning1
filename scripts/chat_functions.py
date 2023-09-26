@@ -43,8 +43,10 @@ import streamlit as st
 
 load_dotenv()
 
-openai_organization=os.environ['openai_organization'],
-openai_api_key=os.environ['openai_api_key']
+os.environ['openai_organization'] = os.getenv("openai_organization")
+os.environ['openai_api_key'] = os.getenv("openai_api_key")
+
+
 
 directory = '../data/'  # This is the directory containing the CSV/text files.
 
