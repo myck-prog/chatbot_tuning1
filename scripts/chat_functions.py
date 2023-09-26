@@ -30,14 +30,6 @@ from langchain.agents.openai_functions_agent.agent_token_buffer_memory import Ag
 
 import streamlit as st
 
-import json
-
-with open('credentials.json') as f:
-    credentials = json.load(f)
-
-os.environ['openai_api_key'] = credentials['openai_api_key']
-os.environ['openai_organization'] = credentials['openai_organization']
-
 
 # /Users/sunnyd/Downloads/Archive/data
 
