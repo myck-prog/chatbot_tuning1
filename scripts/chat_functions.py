@@ -27,6 +27,7 @@ from langchain.prompts import MessagesPlaceholder
 
 from langchain.agents import AgentExecutor
 from langchain.agents.openai_functions_agent.agent_token_buffer_memory import AgentTokenBufferMemory
+from dotenv import load_dotenv
 
 import streamlit as st
 
@@ -40,6 +41,10 @@ import streamlit as st
 # # Construct the path to the 'data' directory
 # directory = os.path.join(current_directory, '..', 'data/')
 
+load_dotenv()
+
+openai_organization=os.environ['openai_organization'],
+openai_api_key=os.environ['openai_api_key']
 
 directory = '../data/'  # This is the directory containing the CSV/text files.
 
